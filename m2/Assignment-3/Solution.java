@@ -1,5 +1,5 @@
 /**.
-    * Author : prathyusha.
+    * Author : praneetha.
     * date : 28/08/18
 */
 import java.util.Scanner;
@@ -39,4 +39,5 @@ public final class Solution {
         }
     }
 }
+
 
