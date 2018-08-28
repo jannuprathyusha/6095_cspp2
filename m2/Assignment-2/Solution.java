@@ -26,12 +26,10 @@ public final class Solution {
     *@param c int
     */
     public static void roots(final int a, final int b, final int c) {
-        double d = (b * b) - (4 * a * c);
+        double d = (b * b) - (2 * 2 * a * c);
         double qu = Math.sqrt(d);
         double r1 = ((-b + qu) / (2 * a));
         double r2 = ((-b - qu) / (2 * a));
         System.out.println(r1 + " " + r2);
     }
 }
-
-
