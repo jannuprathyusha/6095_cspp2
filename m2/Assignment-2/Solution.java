@@ -25,7 +25,7 @@ public final class Solution {
     *@param b int
     *@param c int
     */
-    public static void roots(final int a, int b, int c) {
+    public static void roots(final int a, final int b, final int c) {
         double d = (b * b) - (4 * a * c);
         double qu = Math.sqrt(d);
         double r1 = ((-b + qu) / (2 * a));
@@ -33,4 +33,5 @@ public final class Solution {
         System.out.println(r1 + " " + r2);
     }
 }
+
 
