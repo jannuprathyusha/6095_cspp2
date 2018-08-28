@@ -1,5 +1,5 @@
 /**.
-    * Author : praneetha.
+    * Author : prathyusha.
     * date : 28/08/18
 */
 import java.util.Scanner;
