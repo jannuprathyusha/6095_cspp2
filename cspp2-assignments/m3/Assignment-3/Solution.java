@@ -24,7 +24,7 @@ public final class Solution {
     *Need to write the gcd function and print the output.
     *@param a int
     *@param b int
-    *@param result an argument
+    *@param a argument
     */
     public static int gcd(final int a, final int b) {
         if (a == 0 && b != 0) {
