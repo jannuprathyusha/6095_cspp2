@@ -12,7 +12,7 @@ public class Solution {
     Do not modify this main function.
     *@param args String
     */
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 
         Scanner s=new Scanner(System.in);      
         int n1 = s.nextInt();
@@ -25,19 +25,19 @@ public class Solution {
 	*@param a int
     *@param b int
 	*/
-	public static int gcd(int a,int b ){
-		if(a==0 && b!=0){
+	public static int gcd(final int a, final int b ){
+		if(a == 0 && b != 0) {
 			return b;
 		}
-		if(a!=0 && b==0){
+		if(a != 0 && b == 0) {
 			return a;
 		}
-		if(a==b){
+		if(a == b) {
 			return a;
 		}
-		if(a>b){
-			return gcd(a-b,b);
+		if(a > b) {
+			return gcd(a-b, b);
 		}
-		return gcd(a,b-a);
+		return gcd(a, b-a);
 	}
 }
