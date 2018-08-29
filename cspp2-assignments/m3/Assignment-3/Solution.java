@@ -1,7 +1,7 @@
 import java.util.Scanner;
 /**Do not modify this main function.
 */
-public class Solution {
+public final class Solution {
     /** The program is to find GCD.
     */
      private Solution() {
@@ -25,7 +25,7 @@ public class Solution {
     *@param a int
     *@param b int
     */
-    public static int gcd(final int a, final int b ) {
+    public static int gcd(final int a, final int b) {
         if (a == 0 && b != 0) {
             return b;
         }
@@ -41,3 +41,5 @@ public class Solution {
         return gcd(a, b - a);
     }
 }
+
+
