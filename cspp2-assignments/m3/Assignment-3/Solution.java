@@ -26,18 +26,18 @@ public class Solution {
     *@param b int
 	*/
 	public static int gcd(final int a, final int b ){
-		if(a == 0 && b != 0) {
+		if (a == 0 && b != 0) {
 			return b;
 		}
-		if(a != 0 && b == 0) {
+		if (a != 0 && b == 0) {
 			return a;
 		}
-		if(a == b) {
+		if (a == b) {
 			return a;
 		}
-		if(a > b) {
-			return gcd(a-b, b);
+		if (a > b) {
+			return gcd(a - b, b);
 		}
-		return gcd(a, b-a);
+		return gcd(a, b - a);
 	}
 }
