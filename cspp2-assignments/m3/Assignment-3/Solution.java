@@ -42,3 +42,6 @@ public final class Solution {
         return gcd(a, b - a);
     }
 }
+
+
+
