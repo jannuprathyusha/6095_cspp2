@@ -1,15 +1,22 @@
+/**.
+    * Author : prathyusha.
+    * date : 30/08/18
+*/
 import java.util.Scanner;
+/**.
+    * scanner function for taking user input
+*/
 public final class Solution {
-    /**
-    *Fill this main function to print maximum of given array.
+    /**.
+     Fill the main function to add two matrices
     */
-       private Solution() {
-        //This sis a constructor.
-       }
-       /**
-       * @param args of the program.
-       */
-    public static void main (final String[] args) {
+    private Solution() {
+        //constructor
+    }
+    /**.
+        * @param args of type string : command line arguments
+    */
+    public static void main(final String[] args) {
         /**
         * main function
         */
