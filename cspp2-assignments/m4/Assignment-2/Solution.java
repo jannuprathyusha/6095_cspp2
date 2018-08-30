@@ -31,7 +31,7 @@ public class Solution {
 		         System.out.print(c[i][l-1]+" ");
 	                }
 	         
-	                System.out.println();
+	                System.out.println(c[i][l-1]);
 
 }
 
