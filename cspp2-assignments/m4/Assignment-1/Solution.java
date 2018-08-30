@@ -1,5 +1,5 @@
-import java.util.*;
-public class Solution {
+import java.util.Scanner;
+public final class Solution {
  	/**
  	*Fill this main function to print maximum of given array.
 	*/
@@ -19,13 +19,12 @@ public class Solution {
 		for (int i = 0; i < arr.length; i++) {
 			arr[i] = sc.nextInt();
 		}
-		Arrays.sort( arr );
-		Arrays.toString( arr );
-
-	
-	System.out.println( arr[arr.length-1] );
-
-		
-
+		int max = arr[0];
+		for (int i = 0; i < arr.length; i++) {
+			if ( arr[i] > max) {
+				max = arr[i];
+			}
+		}
+		System.out.println(max);
 	}
 }
