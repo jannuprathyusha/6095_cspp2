@@ -29,7 +29,7 @@ public class Solution {
 			for (i=0;i<m;i++) {
 				for (l=0;l<n-1;l++) {
 		        	c[i][l]=a[i][l]+b[i][l];
-		        	res = c[i][l] + " ";
+		        	res += c[i][l] + " ";
 		        }
 		        res = res.trim() + "\n";
 		    }
