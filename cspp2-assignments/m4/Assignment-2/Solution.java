@@ -24,20 +24,17 @@ public class Solution {
 				
 			}
 		}
-		if(m==p && n==q){
-			for (i=0;i<m;i++){
-			for (l=0;l<n-1;l++){
-		         c[i][l]=a[i][l]+b[i][l];
-		         System.out.print(c[i][l-1]+" ");
-	                }
-	         
-	                System.out.println(c[i][l-1]);
-
-}
-
-
-		}
-		else{
+		if(m==p && n==q) {
+			String res = " ";
+			for (i=0;i<m;i++) {
+				for (l=0;l<n-1;l++) {
+		        	c[i][l]=a[i][l]+b[i][l];
+		        	res = c[i][l] + " ";
+		        }
+		        res = res.trim() + "\n";
+		    }
+		    System.out.println(res);
+		} else {
 			System.out.println("not possible");
 		}	
 
