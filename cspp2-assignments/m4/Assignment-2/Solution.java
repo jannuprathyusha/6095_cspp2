@@ -26,9 +26,9 @@ public class Solution {
 		}
 		if(m==p && n==q){
 			for (i=0;i<m;i++){
-			for (l=0;l<n;l++){
+			for (l=0;l<n-1;l++){
 		         c[i][l]=a[i][l]+b[i][l];
-		         System.out.print(c[i][l]+" ");
+		         System.out.print(c[i][l-1]+" ");
 	                }
 	         
 	                System.out.println();
