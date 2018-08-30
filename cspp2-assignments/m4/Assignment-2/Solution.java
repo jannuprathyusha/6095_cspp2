@@ -33,8 +33,7 @@ public final class Solution {
         int[][] c = new int[m][q];
         for (k = 0; k < p; k++) {
             for (l = 0; l < q; l++) {
-                b[k][l] = sc.nextInt();
-                
+                b[k][l] = sc.nextInt();   
             }
         }
         if (m == p && n == q) {
