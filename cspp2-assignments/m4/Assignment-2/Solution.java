@@ -27,7 +27,7 @@ public class Solution {
 		if(m==p && n==q) {
 			String res = " ";
 			for (i=0;i<m;i++) {
-				for (l=0;l<n-1;l++) {
+				for (l=0;l<n;l++) {
 		        	c[i][l]=a[i][l]+b[i][l];
 		        	res += c[i][l] + " ";
 		        }
