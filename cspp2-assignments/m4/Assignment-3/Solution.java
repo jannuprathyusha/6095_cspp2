@@ -18,7 +18,7 @@ public final class Solution {
      *
      * @return {description_of_the_return_value}.
      */
-    static String binaryToDecimal(final String s){
+    static String binaryToDecimal(final String s) {
         /**
          * {item_description}.
         */
@@ -35,14 +35,14 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(final String[] args){
+    public static void main(final String[] args) {
         /**
          * {var_description}.
         */
         Scanner sc = new Scanner(System.in);
         String s;
         int n = sc.nextInt();
-        for (int i = 1; i <= n; i++){
+        for (int i = 1; i <= n; i++) {
             s = sc.next();
             String res = binaryToDecimal(s);
             System.out.println(res);
