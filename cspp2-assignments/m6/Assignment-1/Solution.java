@@ -21,22 +21,19 @@ public final class Solution {
     // write your code here
         int i, count = 0;
         final int two = 2;
-        for(i = 2; i < n; i++) {
-            if(i % 2 != 0)
-            {
-                for(int j = 1; j < n; j++)
+        for (i = 2; i < n; i++) {
+            if (i % 2 != 0) {
+                for (int j = 1; j < n; j++)
                  {
-                    if(i % j == 0) {
+                    if (i % j == 0) {
                         count += 1;
                  }
             }
-                if(count > two){
+                if (count > two){
                     System.out.println(i);
                 }
-            }
-        
-    }
-        
+            }        
+    }       
     }
     /**
     * main method as driver program.
