@@ -23,19 +23,18 @@ public final class Solution {
         final int two = 2;
         for (i = 2; i < n; i++) {
             if (i % 2 != 0) {
-                for (int j = 1; j < n; j++)
-                 {
+                for (int j = 1; j < n; j++) {
                     if (i % j == 0) {
                         count += 1;
                  }
             }
-                if (count > two){
+                if (count > two) {
                     System.out.println(i);
                 }
             }        
-    }       
     }
-    /**
+    }
+        /**
     * main method as driver program.
     * @param args is the parameter for this method
     */
