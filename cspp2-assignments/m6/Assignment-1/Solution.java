@@ -27,9 +27,10 @@ public final class Solution {
     					count=count+1;
 
     			}
+    			
+    			}
     			if(count>2){
     		       System.out.println(i);
-    			}
     		}
 
     	}
