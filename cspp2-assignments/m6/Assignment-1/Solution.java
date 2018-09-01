@@ -31,8 +31,8 @@ public final class Solution {
                 if (count > two) {
                     System.out.println(i);
                 }
-            }        
-    }
+            }
+               }
     }
         /**
     * main method as driver program.
@@ -44,3 +44,5 @@ public final class Solution {
         oddComposites(n);
     }
 }
+
+
