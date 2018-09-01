@@ -21,15 +21,16 @@ public final class Solution {
     // write your code here
         int i,count=0;
         for(i=2;i<n;i++){
-            if(i%2!=0){
+            if(i%2 == 1){
                 for(int j=1;j<=n;j++){
                     if(i%j == 0){
                         count=count+1;
-                }
+                    }
+            if(count>2)
+                System.out.println(i);
             }
             }
-        if(count>2)
-            System.out.println(i);
+        
     }
         
     }
