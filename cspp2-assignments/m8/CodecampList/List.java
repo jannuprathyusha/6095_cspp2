@@ -25,6 +25,7 @@ public final class List {
      * This is a hard concept to understand. Discuss with your mentor.
      *
     */
+
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
@@ -48,6 +49,7 @@ public final class List {
      * to be accessed by the methods that are outside of the List class.
      *
      */
+
     // declare a private int size
     // again, don't initialize it here
     // variable initialization should be done in the constructor
@@ -75,6 +77,7 @@ public final class List {
         final int zero = 0;
         listsize = zero;
     }
+
     /**
      * The add method does what the name suggests.
      * Add an int item to the list.
@@ -92,6 +95,7 @@ public final class List {
      * @param      item  The item
      */
     public void add(final int item) {
+
         /**
          *
          * The size method returns the value of the size.
@@ -114,6 +118,7 @@ public final class List {
          */
         return (listsize);
     }
+
     /*
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
@@ -144,7 +149,7 @@ public final class List {
         // Think about what to do to the size variable.
         */
         if (index <= listsize) {
-            for (int i = index - 1; i < size() - 1; i++) {
+            for (int i = index; i < size() - 1; i++) {
                 list[i] = list[i + 1];
             }
             listsize -= 1;
@@ -152,6 +157,7 @@ public final class List {
             System.out.println("Invalid Position Exception");
         }
     }
+
     /**
      * Get method has to return the items that is
      * at the index position passed as an argument to the method.
@@ -168,18 +174,17 @@ public final class List {
      *
      * @param      index  The index
      *
-     * @return     element at that index
      */
-    public int get(final int index) {
+    public void get(final int index) {
         /**
          *
          *Replace the code below to write the code for get.
         */
         if (index < listsize) {
-            return list[index];
+            System.out.println(list[index]);
         }
-        return -1;
     }
+
     /**
      * What happens when you print an object using println?
      * Java provides a method named toString that is internally
@@ -215,6 +220,7 @@ public final class List {
         }
         return ("[" + s.substring(0, s.length() - 1) + "]");
     }
+
     /*
      * Contains return true if the list has
      * the item passed as an argument to the method
@@ -237,6 +243,7 @@ public final class List {
         }
         return false;
     }
+
     /*
      * Returns the index of the first occurrence
      * of the specified element in this list,
@@ -270,6 +277,7 @@ public final class List {
          * create an object of the list to invoke methods on it.
          */
         List l = new List();
+
         // code to read the test cases input file
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         // check if there is one more line to process
@@ -302,7 +310,7 @@ public final class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
             case "get":
-                System.out.println(l.get(Integer.parseInt(tokens[1])));
+                l.get(Integer.parseInt(tokens[1]));
                 break;
             case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
