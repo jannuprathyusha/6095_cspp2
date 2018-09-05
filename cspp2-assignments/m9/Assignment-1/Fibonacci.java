@@ -37,14 +37,14 @@ final public class Fibonacci {
         for (int i = 2; i < n; i++) {
         nextFib = fibNum1;
         fibNum1 = fibNum2;
-        fibNum2=nextFib+fibNum2;
+        fibNum2 = nextFib + fibNum2;
         list.add(fibNum2);
          }
          return list;
      }
      public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
-        System.out.println(fib(n));
+        int numRange = s.nextInt();
+        System.out.println(fib(numRange));
     }
 }
