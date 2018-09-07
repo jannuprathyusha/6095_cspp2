@@ -274,7 +274,7 @@ public class StringList implements StringListInterface{
         int i;
         for (i = 0; i < size; i++) {
             if (item.equals(list[i]))
-                return 1;
+                return -1;
         }
         return i;
     }
