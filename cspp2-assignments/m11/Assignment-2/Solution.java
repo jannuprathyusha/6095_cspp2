@@ -2,17 +2,17 @@ import java.io.BufferedInputStream;
 import java.util.Scanner;
 //A Class is implemented for Student details
 /**
-* class.
+* class Student.
 */
 class Student {
     /**
-     * class.
+     * name.
      */
     private String name;
     /**
      * Constructs the object.
      *
-     * @param      name1  The name 1
+     * @param      name1  The name.
      */
     Student(final String name1) {
     //A constructor used to initialize the instance variables
@@ -27,10 +27,16 @@ class Student {
     //Getter method which returns the value of instance variable
         return this.name;
     }
-
+    /**
+     * equals.
+     *
+     * @param      other  The other.
+     *
+     * @return     { description_of_the_return_value }.
+     */
     @Override
     public boolean equals(final Object other) {
-     //This method is to check if two students names are equal or not
+    //This method is to check if two students names are equal or not
         if (!(other instanceof Student)) {
             return false;
         }
@@ -56,17 +62,18 @@ class Student {
     }
 }
 /**
- * Class for solution.
+ * class Solution.
  */
 public final class Solution {
+
     /**
      * Constructs the object.
      */
     private Solution() {
-        //function.
+        //Empty.
     }
     /**
-     * for ints.
+     * { function_description }.
      *
      * @param      stdin  The stdin
      */
@@ -138,8 +145,8 @@ public final class Solution {
                     break;
                 }
                 String[] arrstring3 = tokens[1].split(",");
-                List object = l.subList(Integer.parseInt(arrstring3[0]),
-                 Integer.parseInt(arrstring3[1]));
+                List object = l.subList(
+Integer.parseInt(arrstring3[0]), Integer.parseInt(arrstring3[1]));
                 if (object != null) {
                     System.out.println(object);
                 }
@@ -163,7 +170,7 @@ public final class Solution {
         }
     }
     /**
-     * for doubles.
+     * { function_description }.
      *
      * @param      stdin  The stdin
      */
@@ -197,20 +204,19 @@ public final class Solution {
                 break;
             case "indexOf":
                 if (tokens.length == 2) {
-                    System.out.println(l.indexOf(Double.
-                        parseDouble(tokens[1])));
+                    System.out.println(
+                        l.indexOf(Double.parseDouble(tokens[1])));
                 }
                 break;
             case "get":
                 if (tokens.length == 2) {
-                    System.out.println(l.get(Integer.
-                        parseInt(tokens[1])));
+                    System.out.println(l.get(Integer.parseInt(tokens[1])));
                 }
                 break;
             case "contains":
                 if (tokens.length == 2) {
-                    System.out.println(l.contains(Double.
-                        parseDouble(tokens[1])));
+                    System.out.println(
+                l.contains(Double.parseDouble(tokens[1])));
                 }
                 break;
             case "addAll":
@@ -238,8 +244,8 @@ public final class Solution {
                     break;
                 }
                 String[] arrstring3 = tokens[1].split(",");
-                List object = l.subList(Integer.parseInt(arrstring3[0]),
-                 Integer.parseInt(arrstring3[1]));
+                List object = l.subList(
+Integer.parseInt(arrstring3[0]), Integer.parseInt(arrstring3[1]));
                 if (object != null) {
                     System.out.println(object);
                 }
@@ -263,7 +269,7 @@ public final class Solution {
         }
     }
     /**
-     * float function.
+     * { function_description }.
      *
      * @param      stdin  The stdin
      */
@@ -335,8 +341,8 @@ public final class Solution {
                     break;
                 }
                 String[] arrstring3 = tokens[1].split(",");
-                List object = l.subList(Integer.parseInt(arrstring3[0]),
-                 Integer.parseInt(arrstring3[1]));
+                List object = l.subList(
+Integer.parseInt(arrstring3[0]), Integer.parseInt(arrstring3[1]));
                 if (object != null) {
                     System.out.println(object);
                 }
@@ -359,8 +365,9 @@ public final class Solution {
             }
         }
     }
+
     /**
-     * for strings.
+     * { function_description }.
      *
      * @param      stdin  The stdin
      */
@@ -424,8 +431,8 @@ public final class Solution {
                     break;
                 }
                 String[] arrstring3 = tokens[1].split(",");
-                List object = l.subList(Integer.parseInt(arrstring3[0]),
-                 Integer.parseInt(arrstring3[1]));
+                List object = l.subList(Integer.
+    parseInt(arrstring3[0]), Integer.parseInt(arrstring3[1]));
                 if (object != null) {
                     System.out.println(object);
                 }
@@ -448,8 +455,9 @@ public final class Solution {
             }
         }
     }
+
     /**
-     * for students.
+     * { function_description }.
      *
      * @param      stdin  The stdin
      */
@@ -522,11 +530,12 @@ public final class Solution {
                 }
                 String[] arrstring3 = tokens[1].split(",");
                 List object = l.subList(Integer.parseInt(arrstring3[0]),
-                 Integer.parseInt(arrstring3[1]));
+                    Integer.parseInt(arrstring3[1]));
                 if (object != null) {
                     System.out.println(object);
                 }
                 break;
+
             case "equals":
                 if (tokens.length == 2) {
                     String[] lt = tokens[1].split(",");
@@ -546,48 +555,41 @@ public final class Solution {
         }
     }
     /**
-     * main function.
+     * main.
      *
-     * @param      args  The arguments
+     * @param      args  The arguments.
      */
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
         String objectType = stdin.nextLine();
-
         switch (objectType) {
-        case "S":
-        //This case will be executed for String type list
-            executeListString(stdin);
-            break;
+        case "S"://This case will be executed for String type list
+        executeListString(stdin);
+        break;
+    case "I"://This case will be executed for Integer type list
+        executeListInteger(stdin);
+        break;
 
-        case "I":
-        //This case will be executed for Integer type list
-            executeListInteger(stdin);
-            break;
+    case "F"://This case will be executed for Float type list
+        executeListFloat(stdin);
+        break;
 
-        case "F":
-        //This case will be executed for Float type list
-            executeListFloat(stdin);
-            break;
+    case "C"://This case will be executed for Character type list
+        executeListString(stdin);
+        break;
 
-        case "C":
-        //This case will be executed for Character type list
-            executeListString(stdin);
-            break;
+    case "D"://This case will be executed for Double type list
+        executeListDouble(stdin);
+        break;
 
-        case "D":
-        //This case will be executed for Double type list
-            executeListDouble(stdin);
-            break;
-
-        case "O":
-        //This case will be executed for Student type list
+    case "O"://This case will be executed for Student type list
         // i.e to store List of Student Objects
-            executeListStudent(stdin);
-            break;
-        default:
-            break;
-        }
+        executeListStudent(stdin);
+        break;
+    default:
+        break;
     }
 }
+}
+
