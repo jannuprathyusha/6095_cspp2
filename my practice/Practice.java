@@ -4,16 +4,25 @@ class Practice{
 		int i;
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
-		//float[] arr = new float[n];
-		float sum=0;
+		int[] arr = new int[n];
+		int sum1=0;
+		int sum2=0;
 		for (i=0;i<n;i++){
-			//arr[i]=s.nextFloat();
-			sum=sum+s.nextFloat();
+			arr[i]=s.nextInt();
+			if (arr[i]%2==0){
+				sum1=sum1+arr[i];
+			}
+			else {
+               sum2=sum2+arr[i];
+			}
+
+			
 			//System.out.println(arr[i]+" ");
 			
 		}
 		//for (i=0;i<n;i++){
-		System.out.print(sum);
+		System.out.println("Even numbers sum is"+sum1);
+		System.out.println("odd numbers sum is"+sum2);
 
 	//}
 		// int num = s.nextInt();
