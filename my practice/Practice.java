@@ -1,14 +1,19 @@
 import java.util.*;
 class Practice{
 	public static void main(String[] args){
+		int i;
 		Scanner s = new Scanner(System.in);
-		int[] arr = new	int[10];
-		for (int i=0;i<10;i++){
-			arr[i]=s.nextInt()+1;
-			//System.out.println();
+		int n = s.nextInt();
+		String[] arr = new String[n];
+		for (i=0;i<n;i++){
+			arr[i]=s.next();
+			//System.out.println(arr[i]+" ");
 			
 		}
-		System.out.println(Arrays.toString(arr));
+		for (i=0;i<n;i++){
+		System.out.print(arr[i]+" ");
+
+	}
 		// int num = s.nextInt();
 		// num = num+1;
 		// System.out.println(num);
