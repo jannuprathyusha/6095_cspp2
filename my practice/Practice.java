@@ -4,11 +4,11 @@ class Practice{
 		int i;
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
-		float[] arr = new float[n];
+		//float[] arr = new float[n];
 		float sum=0;
 		for (i=0;i<n;i++){
-			arr[i]=s.nextFloat();
-			sum=sum+arr[i];
+			//arr[i]=s.nextFloat();
+			sum=sum+s.nextFloat();
 			//System.out.println(arr[i]+" ");
 			
 		}
