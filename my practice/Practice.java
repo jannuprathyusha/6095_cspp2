@@ -4,16 +4,17 @@ class Practice{
 		int i;
 		Scanner s = new Scanner(System.in);
 		int n = s.nextInt();
-		int[] arr = new int[n];
+		//int[] arr = new int[n];
+		int temp;
 		int sum1=0;
 		int sum2=0;
 		for (i=0;i<n;i++){
-			arr[i]=s.nextInt();
-			if (arr[i]%2==0){
-				sum1=sum1+arr[i];
+			temp=s.nextInt();
+			if (temp%2==0){
+				sum1=sum1+temp;
 			}
 			else {
-               sum2=sum2+arr[i];
+               sum2=sum2+temp;
 			}
 
 			
