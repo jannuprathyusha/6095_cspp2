@@ -3,7 +3,9 @@ import java.util.Scanner;
  * Class for question.
  */
 class Question {
-  
+  /**
+   * question text.
+   */
   private String questiontext;
   /**
    * choices for the question.
@@ -350,4 +352,5 @@ public final class Solution {
     System.out.println(quiz.showReport());
   }
 }
+
 
