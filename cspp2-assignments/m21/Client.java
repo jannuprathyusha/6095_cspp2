@@ -4,9 +4,9 @@ class Food {
 	private String quantity;
 	private String time;
 	private String date;
-	public Food(String i, String q, String d, String t) {
-		this.foodItem = i;
-		this.quantity = q;
+	public Food(String fi, String qty, String d, String t) {
+		this.foodItem = fi;
+		this.quantity = qty;
 		this.time = t;
 		this.date = d;
 	}
