@@ -21,27 +21,27 @@ public final class Solution {
         int i, j, k, l;
         int m = sc.nextInt();
         int n = sc.nextInt();
-        int[][] a = new int[m][n];
+        int[][] matrixOne = new int[m][n];
         for (i = 0; i < m; i++) {
             for (j = 0; j < n; j++) {
-                a[i][j] = sc.nextInt();
+                matrixOne[i][j] = sc.nextInt();
             }
         }
         int p = sc.nextInt();
         int q = sc.nextInt();
-        int[][] b = new int[p][q];
-        int[][] c = new int[m][q];
+        int[][] matrixTwo = new int[p][q];
+        int[][] matrixThree = new int[m][q];
         for (k = 0; k < p; k++) {
             for (l = 0; l < q; l++) {
-                b[k][l] = sc.nextInt();
+                matrixTwo[k][l] = sc.nextInt();
             }
         }
         if (m == p && n == q) {
             String res = " ";
             for (i = 0; i < m; i++) {
                 for (l = 0; l < n; l++) {
-                    c[i][l] = a[i][l] + b[i][l];
-                    res += c[i][l] + " ";
+                    matrixThree[i][l] = matrixOne[i][l] + matrixTwo[i][l];
+                    res += matrixThree[i][l] + " ";
                 }
                 res = res.trim() + "\n";
             }
