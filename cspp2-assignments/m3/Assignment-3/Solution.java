@@ -22,24 +22,23 @@ public final class Solution {
     }
     /**
     *Need to write the gcd function and print the output.
-    *@param a int
-    *@param b int
+    *@param numberOne int
+    *@param numberTwo int
     *@return a argument
     */
-    public static int gcd(final int a, final int b) {
-        if (a == 0 && b != 0) {
-            return b;
+    public static int gcd(final int numberOne, final int numberTwo) {
+        if (numberOne == 0 && numberTwo != 0) {
+            return numberTwo;
         }
-        if (a != 0 && b == 0) {
-            return a;
+        if (numberOne != 0 && numberTwo == 0) {
+            return numberOne;
         }
-        if (a == b) {
-            return a;
+        if (numberOne == numberTwo) {
+            return numberOne;
         }
-        if (a > b) {
-            return gcd(a - b, b);
+        if (numberOne > numberTwo) {
+            return gcd(numberOne - numberTwo, numberTwo);
         }
-        return gcd(a, b - a);
+        return gcd(numberOne, numberTwo - numberOne);
     }
 }
-
