@@ -25,12 +25,14 @@ public final class Solution {
     *@param numberTwo int
     *@param numberThree int
     */
-    public static void roots(final int numberOne, final int numberTwo, final int numberThree) {
-        double d = (numberTwo * numberTwo) - (2 * 2 * numberOne * numberThree );
+    public static void roots(final int numberOne, 
+    	final int numberTwo, final int numberThree) {
+        double d = (numberTwo * numberTwo) - (2 * 2 * numberOne * numberThree);
         double qu = Math.sqrt(d);
         double rootOne = ((-numberTwo + qu) / (2 * numberOne));
         double rootTwo = ((-numberTwo - qu) / (2 * numberOne));
         System.out.println(rootOne + " " + rootTwo);
     }
 }
+
 
