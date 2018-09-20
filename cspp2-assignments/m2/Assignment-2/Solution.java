@@ -14,23 +14,23 @@ public final class Solution {
     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-        int c = scan.nextInt();
-        roots(a, b, c);
+        int numberOne = scan.nextInt();
+        int numberTwo = scan.nextInt();
+        int numberThree = scan.nextInt();
+        roots(numberOne, numberTwo, numberThree);
     }
     /**
     *Need to write the rootsOfQuadraticEquation function and print the output.
-    *@param a int
-    *@param b int
-    *@param c int
+    *@param numberOne int
+    *@param numberTwo int
+    *@param numberThree int
     */
-    public static void roots(final int a, final int b, final int c) {
-        double d = (b * b) - (2 * 2 * a * c);
+    public static void roots(final int numberOne, final int numberTwo, final int numberThree) {
+        double d = (numberTwo * numberTwo) - (2 * 2 * numberOne * numberThree );
         double qu = Math.sqrt(d);
-        double r1 = ((-b + qu) / (2 * a));
-        double r2 = ((-b - qu) / (2 * a));
-        System.out.println(r1 + " " + r2);
+        double rootOne = ((-numberTwo + qu) / (2 * numberOne));
+        double rootTwo = ((-numberTwo - qu) / (2 * numberOne));
+        System.out.println(rootOne + " " + rootTwo);
     }
 }
 
