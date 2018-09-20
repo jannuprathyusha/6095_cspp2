@@ -10,25 +10,21 @@ public final class Solution {
         //function.
     }
     /**
-     * { function_description }.
-     *
-     * @param s { parameter_description }.
+     * @param givenString { parameter_description }.
      *
      * @return { description_of_the_return_value }.
      */
-    static String reverseString(final String s) {
+    static String reverseString(final String givenString) {
         /**
          * { var_description }.
          */
         String rev = "";
-        for (int i = s.length() - 1; i >= 0; i--) {
-            rev += s.charAt(i);
+        for (int i = givenString.length() - 1; i >= 0; i--) {
+            rev += givenString.charAt(i);
         }
         return (rev);
     }
     /**
-     * { function_description }.
-     *
      * @param      args  The arguments.
      */
     public static void main(final String[] args) {
