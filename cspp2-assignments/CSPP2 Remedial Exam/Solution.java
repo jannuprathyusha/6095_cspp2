@@ -18,6 +18,7 @@ class Hotel{
 	 			return i+1;
 	 		}
 	 	}
+	 	System.out.println("All Rooms are reserved");
 	 	return -1;
 	 } 
 	public boolean reserveRoom(String person, int roomNum) {
