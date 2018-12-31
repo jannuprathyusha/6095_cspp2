@@ -126,7 +126,7 @@ swathi 5
 No rooms are added
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Hotel.reserveRoom(Solution.java:24)
-	at Solution.main(Solution.java:83)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -163,7 +163,7 @@ kumar 3
 No rooms are added
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Hotel.reserveRoom(Solution.java:24)
-	at Solution.main(Solution.java:83)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
 ########## Testcase 6: Failed ##########
 Expected Output: 
@@ -213,7 +213,7 @@ swathi 5
 No rooms are added
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Hotel.reserveRoom(Solution.java:24)
-	at Solution.main(Solution.java:83)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
 ########## Testcase 7: Failed ##########
 Expected Output: 
@@ -268,5 +268,5 @@ kumar 5
 No rooms are added
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Hotel.reserveRoom(Solution.java:24)
-	at Solution.main(Solution.java:83)
+	at Solution.main(Solution.java:86)
 ----------------------------------------
