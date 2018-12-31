@@ -4,37 +4,44 @@ import java.util.*;
  */
 class Hotel{
 	Reservation[] rooms;
-	// int size; 
+	 int size; 
 	Hotel(){
 		rooms = new Reservation[5];
 		size = 0;
 	}
-	 ​public int reserveRoom(String person) {
-	 	Reservation r = new Reservation(person);
+	public int reserveRoom(String person) {
 	 	for(int i = 0; i < rooms.length; i++) {
 	 		if(rooms[i] == null) {
+	 			Reservation r = new Reservation(person, i+1);
 	 			rooms[i] = r;
 	 			size++;
 	 			return i+1;
 	 		}
 	 	}
+	 	return -1;
 	 } 
-	 public boolean reserveRoom(String person, int roomNum)   {
-	 	if(rooms[roomNum] != null || size == rooms.length) {
+	public boolean reserveRoom(String person, int roomNum) {
+	 	if(rooms[roomNum-1] != null || size == rooms.length) {
 	 		return false;
 	 	} else {
 	 		Reservation r = new Reservation(person, roomNum);
-	 		rooms[roomNum] = r;
+	 		rooms[roomNum-1] = r;
 	 		return true;
 	 	}
 	 }
-	  ​public void printReservations() {
+	void printReservations() {
 	  	for(int i = 0; i < rooms.length; i++) {
 	  		if(rooms[i] != null) {
 	  			System.out.println(rooms[i].getName() + " " + rooms[i].getRoom());
 	  		}
 	  	}
-	  }
+	 }
+	 public void cancelReservations(String person) {
+	 	return;
+	 }
+	 public boolean buildRooms(int num) {
+	 	return false;
+	 }
 }
 public class Solution{
 
