@@ -25,8 +25,8 @@ class Hotel{
 	 	if(size == rooms.length) {
 	 		System.out.println("All Rooms are reserved");
 	 		return false;
-	 	} else if(rooms[roomNum-1] != null){
-	 		System.out.println("Room is already reserved");
+	 	} else if(rooms[roomNum] != null){
+	 		System.out.println("All Rooms are reserved");
 	 		return false;
 	 	} else {
 	 		Reservation r = new Reservation(person, roomNum);

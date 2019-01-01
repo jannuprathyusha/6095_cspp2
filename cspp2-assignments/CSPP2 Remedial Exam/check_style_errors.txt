@@ -25,9 +25,7 @@ Starting audit...
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:24:51: Parameter roomNum should be final. [FinalParameters]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:25:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:28:26: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:28:40: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:28:41: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:28:52: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:28:50: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:33:38: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:33:39: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:37:9: Missing a Javadoc comment. [JavadocMethod]
@@ -129,4 +127,4 @@ Starting audit...
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:113: 'else' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\CSPP2 Remedial Exam\Solution.java:114: Line is longer than 80 characters (found 105). [LineLength]
 Audit done.
-Checkstyle ends with 129 errors.
+Checkstyle ends with 127 errors.
