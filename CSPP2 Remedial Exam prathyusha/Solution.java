@@ -48,6 +48,12 @@ class Hotel{
 	}
 
 	public void cancelReservations(String person){
+		for(int i=0;i<size;i++){
+			if(rooms[i] != null && rooms[i].getName().equals(person)){
+                 rooms[i]=null;
+                 size--;
+			}
+		}
 	}
 
 	public boolean buildRooms(int num){
