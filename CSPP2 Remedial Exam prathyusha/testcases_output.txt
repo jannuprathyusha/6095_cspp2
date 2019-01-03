@@ -16,11 +16,11 @@ karan 3
 murthy 2
 rajiv 5
 kalyani 4
-Reservation@2f7a2457
-Reservation@566776ad
-Reservation@6108b2d7
-Reservation@1554909b
-Reservation@6bf256fa
+rehana 1
+murthy 2
+karan 2
+kalyani 4
+rajiv 4
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -41,11 +41,11 @@ murthy 1
 rajiv 3
 kalyani 4
 kumar 5
-Reservation@2f7a2457
-Reservation@566776ad
-Reservation@6108b2d7
-Reservation@1554909b
-Reservation@6bf256fa
+murthy 0
+kiran 1
+rajiv 3
+kalyani 4
+kumar 5
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -156,9 +156,9 @@ kiran 2
 murthy 1
 kumar 3
 All Rooms are reserved
-Reservation@2f7a2457
-Reservation@566776ad
-Reservation@6108b2d7
+murthy 0
+kiran 1
+kumar 3
 No rooms are added
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Hotel.reserveRoom(Solution.java:20)
@@ -199,17 +199,17 @@ All Rooms are reserved
 kalyani 3
 kumar 4
 swathi 5
-Reservation@2f7a2457
-Reservation@566776ad
-Reservation@6108b2d7
-Reservation@1554909b
-Reservation@6bf256fa
+murthy 0
+kiran 1
+kalyani 3
+kumar 4
+swathi 5
 kumar now has no reservations.
-Reservation@2f7a2457
-Reservation@566776ad
-Reservation@6108b2d7
-Reservation@1554909b
-Reservation@6bf256fa
+murthy 0
+kiran 1
+kalyani 3
+kumar 4
+swathi 5
 No rooms are added
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Hotel.reserveRoom(Solution.java:20)
@@ -255,17 +255,17 @@ All Rooms are reserved
 kalyani 3
 kumar 4
 kumar 5
-Reservation@2f7a2457
-Reservation@566776ad
-Reservation@6108b2d7
-Reservation@1554909b
-Reservation@6bf256fa
+murthy 0
+kiran 1
+kalyani 3
+kumar 4
+kumar 5
 kumar now has no reservations.
-Reservation@2f7a2457
-Reservation@566776ad
-Reservation@6108b2d7
-Reservation@1554909b
-Reservation@6bf256fa
+murthy 0
+kiran 1
+kalyani 3
+kumar 4
+kumar 5
 No rooms are added
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
 	at Hotel.reserveRoom(Solution.java:20)
