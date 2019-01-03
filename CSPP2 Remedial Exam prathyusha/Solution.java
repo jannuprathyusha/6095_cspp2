@@ -10,7 +10,7 @@ class Hotel{
 		for(int i=0;i<rooms.length;i++){
 			if(rooms[i] == null){
 				rooms[i] = new Reservation(person,i+1);
-				size++;
+				++size;
 				return i+1;
 			}
 		}
@@ -19,13 +19,13 @@ class Hotel{
 	public boolean reserveRoom(String person,int roomNumber){
 		if(rooms[roomNumber-1] == null){
 			rooms[roomNumber-1] = new Reservation(person,roomNumber-1);
-			size++;
+			++size;
 			return true;
 		}
-		else if(rooms[roomNumber] != null){
+		else if(rooms[roomNumber-1] != null){
              return false;
 		}
-        else if(roomNumber == size){
+        else if(size == rooms.length){
         	System.out.println("All Rooms are reserved");
         	return false;
         }
