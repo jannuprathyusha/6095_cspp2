@@ -58,7 +58,8 @@ class Hotel{
 	}
 
 	public boolean buildRooms(int num){
-		return false;
+		rooms = Arrays.copyOf(rooms, rooms.length + num);
+		return true;
 	}
 }
 /**
