@@ -48,10 +48,10 @@ class Hotel{
 	}
 
 	public void cancelReservations(String person){
-		for(int i=0;i<size;i++){
+		for(int i=0;i<rooms.length;i++){
 			if(rooms[i] != null && rooms[i].getName().equals(person)){
                  rooms[i]=null;
-                 size--;
+                 --size;
 			}
 		}
 	}
