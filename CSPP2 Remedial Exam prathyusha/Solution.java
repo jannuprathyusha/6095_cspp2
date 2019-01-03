@@ -18,7 +18,7 @@ class Hotel{
 	}
 	public boolean reserveRoom(String person,int roomNumber){
 		if(rooms[roomNumber-1] == null){
-			rooms[roomNumber-1] = new Reservation(person,roomNumber-1);
+			rooms[roomNumber-1] = new Reservation(person,roomNumber);
 			++size;
 			return true;
 		}

@@ -38,12 +38,10 @@ Starting audit...
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:20:36: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:20:37: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:20:48: '{' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:21: Line is longer than 80 characters (found 83). [LineLength]
+[ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:21: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:21:41: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:21:42: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:21:70: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:21:80: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:21:81: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:24:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:25:24: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:25:41: '-' is not preceded with whitespace. [WhitespaceAround]
@@ -160,4 +158,4 @@ Starting audit...
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:114: 'else' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\CSPP2\6095_cspp2\CSPP2 Remedial Exam prathyusha\Solution.java:115: Line is longer than 80 characters (found 105). [LineLength]
 Audit done.
-Checkstyle ends with 160 errors.
+Checkstyle ends with 158 errors.
