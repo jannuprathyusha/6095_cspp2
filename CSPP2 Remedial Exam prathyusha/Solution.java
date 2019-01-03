@@ -29,13 +29,14 @@ class Hotel{
 			++size;
 			return true;
 		}
-		else if(rooms[roomNumber-1] != null){
-             return false;
-		}
-        else if(size == rooms.length){
+		else if(size == rooms.length){
         	System.out.println("All Rooms are reserved");
         	return false;
         }
+		else if(rooms[roomNumber-1] != null){
+			System.out.println("Room is already reserved");
+             return false;
+		}
         return false;
 	}
 	public void printReservations(){
