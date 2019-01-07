@@ -31,7 +31,7 @@ class Question{
     public String commonSelectedOption(){
         int max = 0;
         int index = 0;
-        for(int i=0; i<options.length;i++){
+        for(int i=0; i<4;i++){
            if(count[i]>max){
             max = count[i];
             index=i;
