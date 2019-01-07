@@ -1,0 +1,19 @@
+Starting audit...
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:4: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:4:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:5:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:11:55: '4' is a magic number. [MagicNumber]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:24: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:24:72: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:24:73: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:25:71: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:25:72: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:26: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:31: Line is longer than 80 characters (found 115). [LineLength]
+[ERROR] E:\CSPP2\6095_cspp2\Poll\Solution.java:31:85: '+' is not preceded with whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 16 errors.
