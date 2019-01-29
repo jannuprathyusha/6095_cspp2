@@ -82,6 +82,7 @@ class Sample{
 						else{
 							System.out.println("Insufficient funds");
 						}
+						break;
 				}
 
 			}
