@@ -31,7 +31,12 @@ class Sample{
 					if(amount>0 && temp.amount > amount){
 						temp.amount= temp.amount- amount;
 					}
-
+					else if(temp.amount>amount){
+						System.out.println("Insufficient funds");
+					}
+					else if(amount<0){
+						System.out.println("Negative amount");
+					}
 					break;
 				case "credit":
 					String[] tokens = scan.nextLine().split(" ");
@@ -45,6 +50,9 @@ class Sample{
 					float amt = Float.parseFloat(tokens[1]);
 					if (amt > 0) {
 						temp1.amount = temp1.amount + amt;
+					}
+					else{
+						System.out.println("Negative amount");
 					}
 					break;
 				case "balance":
@@ -63,13 +71,16 @@ class Sample{
 					Wallet temp3 = new Wallet();
 					Wallet temp4 = new Wallet();
 					for (int i =0; i < walletsCount; i++) {
-						if (user.wallets[i].name.equals(token[0])) {
+						if (user.wallets[i].name.equals(token[0]) && temp3.amount>transferAmt) {
 							temp3 = user.wallets[i];
 							temp3.amount = temp3.amount - transferAmt;
 						}
 						if (user.wallets[i].name.equals(token[1])) {
 							temp4 = user.wallets[i];
 							temp4.amount = temp3.amount + transferAmt;
+						}
+						else{
+							System.out.println("Insufficient funds");
 						}
 				}
 
