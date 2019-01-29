@@ -15,9 +15,12 @@ class Sample{
 		}	
 		User user = new User(username,walletsCount,wallets);
 
-		while(scan.hasNextLine()){
+		while(scan.hasNext()){
 			String type =  scan.nextLine();
 			switch(type){
+				case "quit": 
+				    System.out.println("Thank you");
+				    break;
 				case "debit":
 					String[] line = scan.nextLine().split(" ");
 					Wallet temp=new Wallet();
@@ -65,30 +68,27 @@ class Sample{
 						break;
 						}
 					}
-				case "transfer":
-					String[] token = scan.nextLine().split(" ");
-					float transferAmt = Float.parseFloat(token[2]);
-					Wallet temp3 = new Wallet();
-					Wallet temp4 = new Wallet();
-					for (int i =0; i < walletsCount; i++) {
-						if (user.wallets[i].name.equals(token[0])) {
-							temp3 = user.wallets[i];
-							break;
-					   }
-					    if (user.wallets[i].name.equals(token[1])) {
-							temp4 = user.wallets[i];
-							break;
-						}
-				}
-				 temp3.amount = temp3.amount - transferAmt;
-				 temp4.amount = temp3.amount + transferAmt;
-				 if(temp3.amount<transferAmt){
-					System.out.println("Insufficient funds");
-				  }
-
-				 case "quit":
-				    System.out.println("Thank you");
-				    break;
+				// case "transfer":
+				// 	String[] token = scan.nextLine().split(" ");
+				// 	float transferAmt = Float.parseFloat(token[2]);
+				// 	Wallet temp3 = new Wallet();
+				// 	Wallet temp4 = new Wallet();
+				// 	for (int i =0; i < walletsCount; i++) {
+				// 		if (user.wallets[i].name.equals(token[0])) {
+				// 			temp3 = user.wallets[i];
+				// 			break;
+				// 	   }
+				// 	    if (user.wallets[i].name.equals(token[1])) {
+				// 			temp4 = user.wallets[i];
+				// 			break;
+				// 		}
+				// }
+				//  temp3.amount = temp3.amount - transferAmt;
+				//  temp4.amount = temp3.amount + transferAmt;
+				//  if(temp3.amount<transferAmt){
+				// 	System.out.println("Insufficient funds");
+				// 	break;
+				//   }
 			}
 		}
 	}
