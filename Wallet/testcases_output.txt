@@ -4,6 +4,7 @@ Insufficient funds
 2000.0
 Thank you
 Your Output: 
+Insufficient funds
 2000.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Sample.main(Sample.java:70)
@@ -15,7 +16,7 @@ Negative amount
 1000.0
 Thank you
 Your Output: 
-Insufficient funds
+Negative amount
 Negative amount
 1000.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
@@ -29,7 +30,8 @@ Expected Output:
 Thank you
 Your Output: 
 Insufficient funds
-26000.0
+Thank you
+6000.0
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Sample.main(Sample.java:70)
 ----------------------------------------

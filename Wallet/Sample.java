@@ -31,10 +31,10 @@ class Sample{
 					if(amount>0 && temp.amount > amount){
 						temp.amount= temp.amount- amount;
 					}
-					else if(temp.amount>amount){
+					if(temp.amount<amount){
 						System.out.println("Insufficient funds");
 					}
-					else if(amount<0){
+					if(amount<0){
 						System.out.println("Negative amount");
 					}
 					break;
@@ -51,7 +51,7 @@ class Sample{
 					if (amt > 0) {
 						temp1.amount = temp1.amount + amt;
 					}
-					else{
+					if(amt<0){
 						System.out.println("Negative amount");
 					}
 					break;
@@ -71,28 +71,26 @@ class Sample{
 					Wallet temp3 = new Wallet();
 					Wallet temp4 = new Wallet();
 					for (int i =0; i < walletsCount; i++) {
-						if (user.wallets[i].name.equals(token[0]) && temp3.amount>transferAmt) {
+						if (user.wallets[i].name.equals(token[0])) {
 							temp3 = user.wallets[i];
-							temp3.amount = temp3.amount - transferAmt;
-						}
-						if (user.wallets[i].name.equals(token[1])) {
+							break;
+					   }
+					    if (user.wallets[i].name.equals(token[1])) {
 							temp4 = user.wallets[i];
-							temp4.amount = temp3.amount + transferAmt;
+							break;
 						}
-						else{
-							System.out.println("Insufficient funds");
-						}
-						break;
 				}
+				 temp3.amount = temp3.amount - transferAmt;
+				 temp4.amount = temp3.amount + transferAmt;
+				 if(temp3.amount<transferAmt){
+					System.out.println("Insufficient funds");
+				  }
 
+				 case "quit":
+				    System.out.println("Thank you");
+				    break;
 			}
-
 		}
-
-
-		
-
-		
 	}
 }
 
