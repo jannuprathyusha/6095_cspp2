@@ -6,10 +6,10 @@ Thank you
 Your Output: 
 Insufficient funds
 2000.0
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Sample.main(Sample.java:73)
+2000.0
+Thank you
 ----------------------------------------
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Negative amount
 Negative amount
@@ -19,8 +19,7 @@ Your Output:
 Negative amount
 Negative amount
 1000.0
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Sample.main(Sample.java:73)
+Thank you
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -29,10 +28,14 @@ Expected Output:
 19000.0
 Thank you
 Your Output: 
-Insufficient funds
+26000.0
 6000.0
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Sample.main(Sample.java:73)
+21000.0
+6000.0
+21000.0
+19000.0
+19000.0
+Thank you
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -43,8 +46,10 @@ Insufficient funds
 Thank you
 Your Output: 
 1000.0
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Sample.main(Sample.java:73)
+1000.0
+1000.0
+Insufficient funds
+Thank you
 ----------------------------------------
 ########## Testcase 4: Failed ##########
 Expected Output: 
@@ -56,6 +61,14 @@ Expected Output:
 Thank you
 Your Output: 
 3000.0
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at Sample.main(Sample.java:73)
+3000.0
+26000.0
+26000.0
+23000.0
+6000.0
+23000.0
+6000.0
+21000.0
+21000.0
+Thank you
 ----------------------------------------

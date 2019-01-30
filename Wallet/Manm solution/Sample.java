@@ -33,6 +33,7 @@ class Sample{
 					float amount =  Float.parseFloat(line[1]);
 					if(amount>0 && temp.amount > amount){
 						temp.amount= temp.amount- amount;
+						System.out.println(temp.amount);
 					}
 					if(temp.amount<amount){
 						System.out.println("Insufficient funds");
@@ -53,6 +54,7 @@ class Sample{
 					float amt = Float.parseFloat(tokens[1]);
 					if (amt > 0) {
 						temp1.amount = temp1.amount + amt;
+						System.out.println(temp1.amount);
 					}
 					if(amt<0){
 						System.out.println("Negative amount");
@@ -68,6 +70,7 @@ class Sample{
 						break;
 						}
 					}
+					break;
 				case "transfer":
 					String[] token = scan.nextLine().split(" ");
 					float transferAmt = Float.parseFloat(token[2]);
@@ -75,20 +78,30 @@ class Sample{
 					Wallet temp4 = new Wallet();
 					for (int i =0; i < walletsCount; i++) {
 						if (user.wallets[i].name.equals(token[0])) {
-							temp3 = user.wallets[i];
-							break;
-					   }
+							// temp3 = user.wallets[i];
+							if(user.wallets[i].amount<transferAmt){
+									System.out.println("Insufficient funds");
+									break;
+				  			}
+							user.wallets[i].amount = user.wallets[i].amount - transferAmt;
+							System.out.println(user.wallets[i].amount);
+					   	}
+
 					    if (user.wallets[i].name.equals(token[1])) {
-							temp4 = user.wallets[i];
-							break;
+							// temp4 = user.wallets[i];
+							user.wallets[i].amount = user.wallets[i].amount + transferAmt;
+							System.out.println(user.wallets[i].amount);
 						}
-				}
-				 temp3.amount = temp3.amount - transferAmt;
-				 temp4.amount = temp3.amount + transferAmt;
-				 if(temp3.amount<transferAmt){
-					System.out.println("Insufficient funds");
-					break;
-				  }
+					}
+					
+				 // temp3.amount = temp3.amount - transferAmt;
+				 // // System.out.println();
+
+					// System.out.println(temp4.amount);
+					// System.out.println(transferAmt);
+					// System.out.println(temp4.amount + transferAmt);
+				 // temp4.amount = temp4.amount + transferAmt;
+				  break;
 			}
 		}
 	}
