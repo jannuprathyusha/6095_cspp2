@@ -33,7 +33,6 @@ class Sample{
 					float amount =  Float.parseFloat(line[1]);
 					if(amount>0 && temp.amount > amount){
 						temp.amount= temp.amount- amount;
-						System.out.println(temp.amount);
 					}
 					if(temp.amount<amount){
 						System.out.println("Insufficient funds");
@@ -54,7 +53,6 @@ class Sample{
 					float amt = Float.parseFloat(tokens[1]);
 					if (amt > 0) {
 						temp1.amount = temp1.amount + amt;
-						System.out.println(temp1.amount);
 					}
 					if(amt<0){
 						System.out.println("Negative amount");
@@ -84,13 +82,13 @@ class Sample{
 									break;
 				  			}
 							user.wallets[i].amount = user.wallets[i].amount - transferAmt;
-							System.out.println(user.wallets[i].amount);
+							//System.out.println(user.wallets[i].amount);
 					   	}
 
 					    if (user.wallets[i].name.equals(token[1])) {
 							// temp4 = user.wallets[i];
 							user.wallets[i].amount = user.wallets[i].amount + transferAmt;
-							System.out.println(user.wallets[i].amount);
+							//System.out.println(user.wallets[i].amount);
 						}
 					}
 					
