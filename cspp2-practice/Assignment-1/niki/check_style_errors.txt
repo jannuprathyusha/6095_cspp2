@@ -1,0 +1,4 @@
+Starting audit...
+[ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\Assignment-1\niki\TodoistMain.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
