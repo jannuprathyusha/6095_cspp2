@@ -202,17 +202,17 @@ class Todoist {
                 }
             }
         }
-        for (int i = 0; i < size; i++) {
-            if (tasklist[i].getpersonname().equals(name)) {
-                if (tasklist[i].getstatus().equals("todo")) {
-                    if (tasklist[i].getimportant()) {
-                        if (tasklist[i].geturgent()) {
-                            return tasklist[i];
-                        }
-                    }
-                }
-            }
-        }
+        // for (int i = 0; i < size; i++) {
+        //     if (tasklist[i].getpersonname().equals(name)) {
+        //         if (tasklist[i].getstatus().equals("todo")) {
+        //             if (tasklist[i].getimportant()) {
+        //                 if (tasklist[i].geturgent()) {
+        //                     return tasklist[i];
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
         return null;
     }
     /**
