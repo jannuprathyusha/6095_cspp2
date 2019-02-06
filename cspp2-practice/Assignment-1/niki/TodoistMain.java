@@ -224,26 +224,26 @@ class Todoist {
      * @return     The next task.
      */
     public Task[] getNextTask(final String name, final int count) {
-        Task[] multipletasks = new Task[count];
-        int size1 = 0;
-        for (int i = 0; i < size; i++) {
-            if (size1 < count) {
-                if (tasklist[i].getpersonname().equals(name)) {
-                    if (tasklist[i].getstatus().equals("todo")) {
-                        if (tasklist[i].getimportant()) {
-                            if (!tasklist[i].geturgent()) {
-                                multipletasks[size1++] = tasklist[i];
-                            }
-                        }
-                    }
-                }
-            } else {
-                break;
-            }
-        }
-        if (size1 <= count) {
-            return multipletasks;
-        }
+        // Task[] multipletasks = new Task[count];
+        // int size1 = 0;
+        // for (int i = 0; i < size; i++) {
+        //     if (size1 < count) {
+        //         if (tasklist[i].getpersonname().equals(name)) {
+        //             if (tasklist[i].getstatus().equals("todo")) {
+        //                 if (tasklist[i].getimportant()) {
+        //                     if (!tasklist[i].geturgent()) {
+        //                         multipletasks[size1++] = tasklist[i];
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     } else {
+        //         break;
+        //     }
+        // }
+        // if (size1 <= count) {
+        //     return multipletasks;
+        // }
         int size2 = 0;
         Task[] multipletask = new Task[count];
         for (int i = 0; i < size; i++) {
