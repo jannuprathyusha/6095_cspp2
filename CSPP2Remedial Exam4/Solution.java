@@ -20,7 +20,7 @@ public class Solution {
 				//Please complete the code to complete the game.
 				int[] scores = new int[count];
 				for(int i=0; i<count; i++){
-					if(game.players[index].getName().equals(player) && game.players[index] != null){
+					if(game.players[index].getName().equals(player) && game.players[i] != null){
 						if(score != 1 && score != 6){
 					          game.players[i].totalScore = game.players[i].totalScore + score;
 				          }
