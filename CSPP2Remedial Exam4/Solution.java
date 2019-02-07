@@ -26,10 +26,11 @@ public class Solution {
 					          game.players[index].totalScore = game.players[index].totalScore + score;
 				          }
 				          if(score == 1){
-				          	totalScore = 0;
+				          	game.players[index].totalScore = 0;
 				          	break;
 				          }
 				          if(score == 6){
+				          	game.players[index].totalScore = game.players[index].totalScore + 6;
 				          	break;
 				          }
 				      }
@@ -48,7 +49,7 @@ class Game{
 	int size;
 	Game(int n){
        numOfPlayers = n;
-       players = new Player[6];
+       players = new Player[5];
        size = 0;
 	}
    public int indexOf(String s){
@@ -60,7 +61,8 @@ class Game{
         return -1;
    }
    public void addPlayer(Player p){
-      players[size++] = p;
+      players[size] = p;
+      ++size;
    }
    public Player winner(){
    	int max = 0;
