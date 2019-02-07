@@ -34,8 +34,8 @@ public class Solution {
 				          }
 				      }
 					}
-					break;
 				}
+				break;
 			}
 
 		}
