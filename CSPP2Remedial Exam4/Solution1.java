@@ -10,7 +10,7 @@ public class Solution1 {
 		while (scan.hasNextLine()) {
 			String lines[] = scan.nextLine().split(" got ");
 			if (lines.length == 1) {
-				if (game.indexOf(lines[0]) == 0) {
+				if (game.indexOf(lines[0]) == -1) {
 					game.addPlayer(new Player(lines[0]));
 				}
 			}  else if (lines.length == 2) {
@@ -19,21 +19,17 @@ public class Solution1 {
 				int score = Integer.parseInt(lines[1]);
 				//Please complete the code to complete the game.
 				int[] scores = new int[count];
-				// for(int i=0; i<count; i++){
-				// 	if(game.players[index].getName().equals(player)){
-				// 		if(score != 1 && score != 6){
-				// 	          totalScore = totalScore + score;
-				//           }
-				//           if(score == 1){
-				//           	totalScore = 0;
-				//           	break;
-				//           }
-				//           if(score == 6){
-				//           	break;
-				//           }
-				// 	}
-				// }
-				game.setTotalScores(index,score,player);
+					if(game.players[index].getName().equals(player) && game.players[index] != null){
+						if(score != 1 && score != 6){
+					          game.players[index].totalScore = game.players[index].totalScore + score;
+				          }
+				          if(score == 1){
+				          	game.players[index].totalScore = 0;
+				          }
+				          if(score == 6){
+				          	game.players[index].totalScore = game.players[index].totalScore + game.players[index].addScore(totalScore);
+				          }
+				      }
 			}
 
 		}
@@ -43,13 +39,11 @@ public class Solution1 {
 class Game{
 	int numOfPlayers;
 	Player[] players;
-	int totalScore;
 	int size;
 	Game(int n){
        numOfPlayers = n;
-       players = new Player[6];
+       players = new Player[5];
        size = 0;
-       totalScore = 0;
 	}
    public int indexOf(String s){
         for(int i=0; i<size; i++){
@@ -60,33 +54,15 @@ class Game{
         return -1;
    }
    public void addPlayer(Player p){
-      players[size++] = p;
+      players[size] = p;
+      ++size;
    }
-   public void setTotalScores(int index,int score,String s){
-       for(int i=0; i<size; i++){
-       	if(players[index].getName().equals(players[i].getName())){
-       		if(score != 1 && score != 6){
-       			totalScore = totalScore + score;
-       		}
-       		if(score == 1){
-       			totalScore = 0;
-       			break;
-       		}
-       		if(score == 6){
-       			break;
-       		}	
-       	}
-       }
-   }
-   // public int getTotalScore(){
-   // 	return totalScore;
-   // }
    public Player winner(){
    	int max = 0;
    	int ind = 0;
       for(int i=0; i<size; i++){
-         if(max<players[i].totalScore){
-         	max = players[i].totalScore;
+         if(max<players[i].getScore()){
+         	max = players[i].getScore();
          	ind = i;
          }
       }
@@ -95,12 +71,19 @@ class Game{
 }
 class Player{
 	String playerName;
-	int score;
+	int totalScore;
 	Player(String name){
         playerName = name;
+        totalScore = 0;
 	}
 	public String getName(){
 		return playerName;
 	}
-
+    public int addScore(int score){
+    	totalScore = totalScore + score;
+    	return totalScore;
+    }
+    public int getScore(){
+    	return this.totalScore;
+    }
 }

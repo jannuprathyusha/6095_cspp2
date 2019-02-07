@@ -19,24 +19,17 @@ public class Solution {
 				int score = Integer.parseInt(lines[1]);
 				//Please complete the code to complete the game.
 				int[] scores = new int[count];
-				while(scan.hasNext()){
 					if(game.players[index].getName().equals(player) && game.players[index] != null){
-						if(index >= 0){
 						if(score != 1 && score != 6){
 					          game.players[index].totalScore = game.players[index].totalScore + score;
 				          }
 				          if(score == 1){
 				          	game.players[index].totalScore = 0;
-				          	break;
 				          }
 				          if(score == 6){
 				          	game.players[index].totalScore = game.players[index].totalScore + 6;
-				          	break;
 				          }
 				      }
-					}
-				}
-				break;
 			}
 
 		}
