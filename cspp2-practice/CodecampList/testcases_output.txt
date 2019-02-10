@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 2
 [5,-1]
@@ -12,11 +12,9 @@ Your Output:
 2
 [5,-1]
 [5,-1,0,99]
-3
-[5,0,99]
--1
-99
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
+	at List.remove(List.java:130)
+	at List.main(List.java:248)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
