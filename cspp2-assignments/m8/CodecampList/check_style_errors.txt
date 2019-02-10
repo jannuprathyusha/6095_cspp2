@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\m8\CodecampList\List.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\CSPP2\6095_cspp2\cspp2-assignments\m8\CodecampList\List.java:194: Line has trailing spaces. [RegexpSingleline]
+Audit done.
+Checkstyle ends with 2 errors.

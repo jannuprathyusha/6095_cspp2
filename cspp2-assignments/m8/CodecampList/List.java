@@ -191,7 +191,7 @@ public final class List {
      * invoked when an object variable is used in println.
      * For example:
      * List l = new List();
-     * System.out.println(l);
+     * System.out.println(l); 
      * This statement is a shortcut for
      * System.out.println(l.toString());
      *
