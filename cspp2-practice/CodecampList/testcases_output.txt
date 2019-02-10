@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 2
 [5,-1]
@@ -12,9 +12,11 @@ Your Output:
 2
 [5,-1]
 [5,-1,0,99]
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
-	at List.remove(List.java:130)
-	at List.main(List.java:248)
+3
+[5,0,99]
+-1
+99
+true
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -30,8 +32,9 @@ true
 Your Output: 
 [8,12,97]
 4
-[8,12,97]
-3
+Invalid Position Exception
+[8,12,97,11]
+4
 0
 97
 1
