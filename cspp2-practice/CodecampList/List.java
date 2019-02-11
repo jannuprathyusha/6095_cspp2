@@ -152,9 +152,7 @@ public class List {
     public int get(int index) {
         // Replace the code below to write the code for get
         for(int i=0; i<size; i++){
-        	if(index < size){
-        		return list[index];
-        	}
+           return list[index];
         }
         return -1;
        }
