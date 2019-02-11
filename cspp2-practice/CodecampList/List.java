@@ -151,7 +151,7 @@ public class List {
      */
     public int get(int index) {
         // Replace the code below to write the code for get
-        for(int i=0; i<size; i++){
+        for(int i=0; i<list.length; i++){
            return list[index];
         }
         return -1;

@@ -42,7 +42,7 @@ Starting audit...
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\CodecampList\List.java:154:19: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\CodecampList\List.java:154:23: '<' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\CodecampList\List.java:154:24: '<' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\CodecampList\List.java:154:34: '{' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\CodecampList\List.java:154:41: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\CodecampList\List.java:169: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\CodecampList\List.java:180:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\CSPP2\6095_cspp2\cspp2-practice\CodecampList\List.java:183:12: 'for' is not followed by whitespace. [WhitespaceAfter]
