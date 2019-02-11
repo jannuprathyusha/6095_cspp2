@@ -19,24 +19,17 @@ public class Solution {
 				int score = Integer.parseInt(lines[1]);
 				//Please complete the code to complete the game.
 				int[] scores = new int[count];
-				while(scan.hasNext()){
 					if(game.players[index].getName().equals(player) && game.players[index] != null){
-						if(index >= 0){
 						if(score != 1 && score != 6){
 					          game.players[index].totalScore = game.players[index].totalScore + score;
 				          }
 				          if(score == 1){
 				          	game.players[index].totalScore = 0;
-				          	break;
 				          }
 				          if(score == 6){
-				          	game.players[index].totalScore = game.players[index].totalScore + 6;
-				          	break;
+				          	game.players[index].totalScore = game.players[index].totalScore + game.players[index].addScore(totalScore);
 				          }
 				      }
-					}
-				}
-				break;
 			}
 
 		}
@@ -68,8 +61,8 @@ class Game{
    	int max = 0;
    	int ind = 0;
       for(int i=0; i<size; i++){
-         if(max<players[i].totalScore){
-         	max = players[i].totalScore;
+         if(max<players[i].getScore()){
+         	max = players[i].getScore();
          	ind = i;
          }
       }
@@ -81,9 +74,16 @@ class Player{
 	int totalScore;
 	Player(String name){
         playerName = name;
+        totalScore = 0;
 	}
 	public String getName(){
 		return playerName;
 	}
-
+    public int addScore(int score){
+    	totalScore = totalScore + score;
+    	return totalScore;
+    }
+    public int getScore(){
+    	return this.totalScore;
+    }
 }
